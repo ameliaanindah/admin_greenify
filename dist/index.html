@@ -1,0 +1,599 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Admin | Greenify Market</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+	    <!-- Tautan ke favicon -->
+      <link rel="icon" type="image/png" href="../dist/assets/img/favicon.png">
+
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/modules/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+
+
+	    <!-- Tautan ke favicon -->
+      <link rel="icon" type="image/png" href="../dist/assets/img/favicon.png">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Start GA -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-94034622-3');
+  </script>
+  <!-- /END GA --></head>
+
+  <body>
+    <div id="app">
+      <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+        <nav class="navbar navbar-expand-lg main-navbar">
+          <form class="form-inline mr-auto">
+            <ul class="navbar-nav mr-3">
+              <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+              <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+            </ul>
+            <div class="search-element">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+              <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+              <div class="search-backdrop"></div>
+              <div class="search-result">
+                <div class="search-header">
+                  Riwayat Pencarian
+                </div>
+                <div class="search-item">
+                  <a href="#">Kelola Produk</a>
+                  <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="search-item">
+                  <a href="#">Kelola Transaksi</a>
+                  <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="search-item">
+                  <a href="#">#PopulerProduk</a>
+                  <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="search-header">
+                  Result
+                </div>
+                <div class="search-item">
+                  <a href="#">
+                    <img class="mr-3 rounded" width="30" src="assets/img/products/product-3-50.png" alt="product">
+                    Sembako
+                  </a>
+                </div>
+                <div class="search-item">
+                  <a href="#">
+                    <img class="mr-3 rounded" width="30" src="assets/img/products/product-2-50.png" alt="product">
+                    Protein
+                  </a>
+                </div>
+                <div class="search-item">
+                  <a href="#">
+                    <img class="mr-3 rounded" width="30" src="assets/img/products/product-1-50.png" alt="product">
+                    Buah-buahan
+                  </a>
+                </div>
+                <div class="search-header">
+                  Projects
+                </div>
+                <div class="search-item">
+                  <a href="#">
+                    <div class="search-icon bg-danger text-white mr-3">
+                      <i class="fas fa-code"></i>
+                    </div>
+                    Kelola User
+                  </a>
+                </div>
+                <div class="search-item">
+                  <a href="#">
+                    <div class="search-icon bg-primary text-white mr-3">
+                      <i class="fas fa-laptop"></i>
+                    </div>
+                    Riwayat Transaksi
+                  </a>
+                </div>
+              </div>
+            </div>
+          </form>
+          <ul class="navbar-nav navbar-right">
+         
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+              <img alt="image" src="assets/img/avatar/avatar-2.png" class="rounded-circle mr-1">
+              <div class="d-sm-none d-lg-inline-block">Hi, Chyizoe</div></a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-title">Aktif 5 min yang lalu</div>
+                <a href="profile.html" class="dropdown-item has-icon">
+                  <i class="far fa-user"></i> Profile
+                </a>
+               
+                <div class="dropdown-divider"></div>
+                <a href="index-0.html" class="dropdown-item has-icon text-danger">
+                  <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-sidebar sidebar-style-2">
+          <aside id="sidebar-wrapper">
+            <div class="sidebar-brand">
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="Nama Logo">
+              </a>
+            </div>          
+            <div class="sidebar-brand sidebar-brand-sm">
+              <a href="index.html">St</a>
+            </div>
+            <ul class="sidebar-menu">
+              <li><a class="nav-link" href="index.html"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+              <li class="menu-header">Kelola</li>
+              <li><a class="nav-link" href="artikel.html"><i class="fa fa-bookmark"></i> <span>Artikel</span></a></li>
+              <li class="dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-archive"></i> <span>Produk</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="sayur.html">Sayuran</a></li> 
+                  <li><a href="buah.html">Buah-buahan</a></li> 
+                  <li><a href="olahan.html">Olahan</a></li> 
+                  <li><a href="protein.html">Protein</a></li> 
+                  <li><a href="bumbu.html">Bumbu</a></li>
+                  <li><a href="sembako.html">Sembako</a></li>  
+                </ul>
+              </li>
+              <li><a class="nav-link" href="user.html"><i class="far fa-user"></i> <span>Pengguna</span></a></li>
+              <li><a class="nav-link" href="transaksi.html"><i class="fa fa-list"></i> <span>Transaksi</span></a></li>
+            </ul>
+  
+                  </aside>
+        </div>
+
+        <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card card-statistic-2">
+                <div class="card-stats">
+                  <div class="card-stats-title">Statistik Order - 
+                    <div class="dropdown d-inline">
+                      <a class="font-weight-600 dropdown-toggle" data-toggle="dropdown" href="#" id="orders-month">Juni</a>
+                      <ul class="dropdown-menu dropdown-menu-sm">
+                        <li class="dropdown-title">Pilih Bulan</li>
+                        <li><a href="#" class="dropdown-item">Januari</a></li>
+                        <li><a href="#" class="dropdown-item">Februari</a></li>
+                        <li><a href="#" class="dropdown-item">Maret</a></li>
+                        <li><a href="#" class="dropdown-item">April</a></li>
+                        <li><a href="#" class="dropdown-item">Mei</a></li>
+                        <li><a href="#" class="dropdown-item active">Juni</a></li>
+                        <li><a href="#" class="dropdown-item">Juli</a></li>
+                        <li><a href="#" class="dropdown-item">Agustus</a></li>
+                        <li><a href="#" class="dropdown-item">September</a></li>
+                        <li><a href="#" class="dropdown-item">Oktober</a></li>
+                        <li><a href="#" class="dropdown-item">November</a></li>
+                        <li><a href="#" class="dropdown-item">Desember</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-stats-items">
+                    <div class="card-stats-item">
+                      <div class="card-stats-item-count">24</div>
+                      <div class="card-stats-item-label">Menunggu</div>
+                    </div>
+                    <div class="card-stats-item">
+                      <div class="card-stats-item-count">12</div>
+                      <div class="card-stats-item-label">Pengiriman</div>
+                    </div>
+                    <div class="card-stats-item">
+                      <div class="card-stats-item-count">23</div>
+                      <div class="card-stats-item-label">Selesai</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-icon shadow-primary bg-primary">
+                  <i class="fas fa-archive"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Total Penjualan</h4>
+                  </div>
+                  <div class="card-body">
+                    1000+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card card-statistic-2">
+                <div class="card-chart">
+                  <canvas id="balance-chart" height="80"></canvas>
+                </div>
+                <div class="card-icon shadow-primary bg-primary">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Saldo</h4>
+                  </div>
+                  <div class="card-body">
+                    Rp 1 Milyar
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card card-statistic-2">
+                <div class="card-chart">
+                  <canvas id="sales-chart" height="80"></canvas>
+                </div>
+                <div class="card-icon shadow-primary bg-primary">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Terjual</h4>
+                  </div>
+                  <div class="card-body">
+                    4,732
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Anggaran vs Penjualan</h4>
+                </div>
+                <div class="card-body">
+                  <canvas id="myChart" height="158"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card gradient-bottom">
+                <div class="card-header">
+                  <h4>5 Produk Terlaris</h4>
+                  <div class="card-header-action dropdown">
+                    <a href="#" data-toggle="dropdown" class="btn btn-danger dropdown-toggle">Bulan</a>
+                    <ul class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                      <li class="dropdown-title">Pilih Periode</li>
+                      <li><a href="#" class="dropdown-item">Harian</a></li>
+                      <li><a href="#" class="dropdown-item">Mingguan</a></li>
+                      <li><a href="#" class="dropdown-item active">Bulan</a></li>
+                      <li><a href="#" class="dropdown-item">Tahunan</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body" id="top-5-scroll">
+                  <ul class="list-unstyled list-unstyled-border">
+                    <li class="media">
+                      <img class="mr-3 rounded" width="55" src="assets/img/products/product-6-50.png" alt="product">
+                      <div class="media-body">
+                        <div class="float-right"><div class="font-weight-600 text-muted text-small">12 produk</div></div>
+                        <div class="media-title">Sayuran</div>
+                        <div class="mt-1">
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-primary" data-width="64%"></div>
+                            <div class="budget-price-label">Rp 10.000</div>
+                          </div>
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-danger" data-width="43%"></div>
+                            <div class="budget-price-label">Rp 4.000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <img class="mr-3 rounded" width="55" src="assets/img/products/product-4-50.png" alt="product">
+                      <div class="media-body">
+                        <div class="float-right"><div class="font-weight-600 text-muted text-small">12 Produk</div></div>
+                        <div class="media-title">Bumbu</div>
+                        <div class="mt-1">
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-primary" data-width="84%"></div>
+                            <div class="budget-price-label">Rp 15.000</div>
+                          </div>
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-danger" data-width="60%"></div>
+                            <div class="budget-price-label">Rp 5.000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <img class="mr-3 rounded" width="55" src="assets/img/products/product-1-50.png" alt="product">
+                      <div class="media-body">
+                        <div class="float-right"><div class="font-weight-600 text-muted text-small">12 Produk</div></div>
+                        <div class="media-title">Buah-Buahan</div>
+                        <div class="mt-1">
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-primary" data-width="34%"></div>
+                            <div class="budget-price-label">Rp 20.000</div>
+                          </div>
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-danger" data-width="28%"></div>
+                            <div class="budget-price-label">Rp 8.000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <img class="mr-3 rounded" width="55" src="assets/img/products/product-3-50.png" alt="product">
+                      <div class="media-body">
+                        <div class="float-right"><div class="font-weight-600 text-muted text-small">12 Produk</div></div>
+                        <div class="media-title">Sembako</div>  
+                        <div class="mt-1">
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-primary" data-width="45%"></div>
+                            <div class="budget-price-label">Rp 30.000</div>
+                          </div>
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-danger" data-width="30%"></div>
+                            <div class="budget-price-label">Rp 5.000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <img class="mr-3 rounded" width="55" src="assets/img/products/product-5-50.png" alt="product">
+                      <div class="media-body">
+                        <div class="float-right"><div class="font-weight-600 text-muted text-small">6 Produk</div></div>
+                        <div class="media-title">Olahan</div>
+                        <div class="mt-1">
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-primary" data-width="35%"></div>
+                            <div class="budget-price-label">Rp 25.000</div>
+                          </div>
+                          <div class="budget-price">
+                            <div class="budget-price-square bg-danger" data-width="28%"></div>
+                            <div class="budget-price-label">Rp 8.000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer pt-3 d-flex justify-content-center">
+                  <div class="budget-price justify-content-center">
+                    <div class="budget-price-square bg-primary" data-width="20"></div>
+                    <div class="budget-price-label">Maksimal Harga</div>
+                  </div>
+                  <div class="budget-price justify-content-center">
+                    <div class="budget-price-square bg-danger" data-width="20"></div>
+                    <div class="budget-price-label">Minimum Harga</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Produk Terbaik</h4>
+                </div>
+                <div class="card-body">
+                  <div class="owl-carousel owl-theme" id="products-carousel">
+                    <div>
+                      <div class="product-item pb-3">
+                        <div class="product-image">
+                          <img alt="image" src="assets/img/products/product-6-50.png" class="img-fluid">
+                        </div>
+                        <div class="product-details">
+                          <div class="product-name">Sayuran</div>
+                          <div class="product-review">
+                          </div>
+                          <div class="text-muted text-small">12 Produk</div>
+                          <div class="product-cta">
+                            <a href="sayur.html" class="btn btn-primary">Detail</a>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                    <div>
+                      <div class="product-item">
+                        <div class="product-image">
+                          <img alt="image" src="assets/img/products/product-2-50.png" class="img-fluid">
+                        </div>
+                        <div class="product-details">
+                          <div class="product-name">Protein</div>
+                          <div class="product-review">
+                          </div>
+                          <div class="text-muted text-small">12 Produk</div>
+                          <div class="product-cta">
+                            <a href="protein.html" class="btn btn-primary">Detail</a>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                    <div>
+                      <div class="product-item">
+                        <div class="product-image">
+                          <img alt="image" src="assets/img/products/product-1-50.png" class="img-fluid">
+                        </div>
+                        <div class="product-details">
+                          <div class="product-name">Buah-Buahan</div>
+                          <div class="product-review">
+                          </div>
+                          <div class="text-muted text-small">12 Produk</div>
+                          <div class="product-cta">
+                            <a href="buah.html" class="btn btn-primary">Detail</a>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                    <div>
+                      <div class="product-item">
+                        <div class="product-image">
+                          <img alt="image" src="assets/img/products/product-3-50.png" class="img-fluid">
+                        </div>
+                        <div class="product-details">
+                          <div class="product-name">Sembako</div>
+                          <div class="product-review">
+                          </div>
+                          <div class="text-muted text-small">12 Produk</div>
+                          <div class="product-cta">
+                            <a href="sembako.html" class="btn btn-primary">Detail</a>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                    <div>
+                      <div class="product-item">
+                        <div class="product-image">
+                          <img alt="image" src="assets/img/products/product-4-50.png" class="img-fluid">
+                        </div>
+                        <div class="product-details">
+                          <div class="product-name">Bumbu</div>
+                          <div class="product-review">
+                          </div>
+                          <div class="text-muted text-small">12 Produk</div>
+                          <div class="product-cta">
+                            <a href="bumbu.html" class="btn btn-primary">Detail</a>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                    <div>
+                      <div class="product-item">
+                        <div class="product-image">
+                          <img alt="image" src="assets/img/products/product-5-50.png" class="img-fluid">
+                        </div>
+                        <div class="product-details">
+                          <div class="product-name">Olahan</div>
+                          <div class="product-review">
+                          </div>
+                          <div class="text-muted text-small">6 Produk</div>
+                          <div class="product-cta">
+                            <a href="olahan.html" class="btn btn-primary">Detail</a>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Penjualan Terbanyak</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="text-title mb-2">April</div>
+                      <ul class="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
+                        <li class="media">
+                          <img class="img-fluid mt-1 img-shadow" src="assets/modules/flag-icon-css/flags/4x3/id.svg" alt="image" width="40">
+                          <div class="media-body ml-3">
+                            <div class="media-title">Indonesia</div>
+                            <div class="text-small text-muted">3,282 <i class="fas fa-caret-down text-danger"></i></div>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <img class="img-fluid mt-1 img-shadow" src="assets/modules/flag-icon-css/flags/4x3/my.svg" alt="image" width="40">
+                          <div class="media-body ml-3">
+                            <div class="media-title">Malaysia</div>
+                            <div class="text-small text-muted">2,976 <i class="fas fa-caret-down text-danger"></i></div>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <img class="img-fluid mt-1 img-shadow" src="assets/modules/flag-icon-css/flags/4x3/us.svg" alt="image" width="40">
+                          <div class="media-body ml-3">
+                            <div class="media-title">United States</div>
+                            <div class="text-small text-muted">1,576 <i class="fas fa-caret-up text-success"></i></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 mt-sm-0 mt-4">
+                      <div class="text-title mb-2">Mei</div>
+                      <ul class="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
+                        <li class="media">
+                          <img class="img-fluid mt-1 img-shadow" src="assets/modules/flag-icon-css/flags/4x3/id.svg" alt="image" width="40">
+                          <div class="media-body ml-3">
+                            <div class="media-title">Indonesia</div>
+                            <div class="text-small text-muted">3,486 <i class="fas fa-caret-up text-success"></i></div>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <img class="img-fluid mt-1 img-shadow" src="assets/modules/flag-icon-css/flags/4x3/ps.svg" alt="image" width="40">
+                          <div class="media-body ml-3">
+                            <div class="media-title">Palestine</div>
+                            <div class="text-small text-muted">3,182 <i class="fas fa-caret-up text-success"></i></div>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <img class="img-fluid mt-1 img-shadow" src="assets/modules/flag-icon-css/flags/4x3/de.svg" alt="image" width="40">
+                          <div class="media-body ml-3">
+                            <div class="media-title">Germany</div>
+                            <div class="text-small text-muted">2,317 <i class="fas fa-caret-down text-danger"></i></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+             
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Amelia Nur Indah P</a>
+        </div>
+        <div class="footer-right">
+          
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="assets/modules/jquery.sparkline.min.js"></script>
+  <script src="assets/modules/chart.min.js"></script>
+  <script src="assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+  <script src="assets/modules/summernote/summernote-bs4.js"></script>
+  <script src="assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/index.js"></script>
+  
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
